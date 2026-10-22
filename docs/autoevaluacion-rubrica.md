@@ -1,6 +1,6 @@
 # Autoevaluación frente a la rúbrica
 
-Revisión de [asesor-experto-ia-escenario-c.pptx](../asesor-experto-ia-escenario-c.pptx) criterio por criterio.
+Revisión de [asesor-experto-ia-escenario-c.pptx](../asesor-experto-ia-escenario-c.pptx) con los criterios de la rúbrica oficial del proyecto.
 Leyenda: ✅ cumple · ⚠️ mejorable · ❌ no cumple.
 
 ## Requisitos de la entrega
@@ -10,30 +10,44 @@ Leyenda: ✅ cumple · ⚠️ mejorable · ❌ no cumple.
 | Usar uno de los tres escenarios oficiales | ✅ | Escenario C: Asesor Experto impulsado por IA para robots industriales. |
 | Entregar en la plantilla oficial de diapositivas | ✅ | Construido sobre el Starter Slide Deck, con su diseño. Se ha quitado la diapositiva de "Instrucciones" y se ha actualizado la portada, como pide la plantilla. |
 
-## Criterios obligatorios
+## Definición del producto
 
-| Sección | Criterio | Estado | Diapositiva |
-|---|---|---|---|
-| Cliente | Usuario objetivo y características demográficas y de comportamiento | ✅ | 3: técnicos de 20 a 60 años, 5 idiomas, 95 % en el móvil, contexto a pie de máquina |
-| Problema | Qué intenta hacer el usuario, cómo lo hace hoy y los mayores fallos | ✅ | 4: tres objetivos, cada uno con su proceso actual y sus fallos |
-| Solución | Descripción en 1–3 frases | ✅ | 5: dos frases en el recuadro principal |
-| Solución | Preguntas de la plantilla: qué haría, qué reemplaza, datos, privacidad, conectividad, por qué un LLM | ✅ | 5 y 6: una tarjeta por pregunta |
-| Riesgos | 3–5 riesgos con mitigación | ✅ | 7: los 3 del escenario y 2 propios, con mitigaciones bajo nuestro control |
-| Atributos | Beneficio principal y 1–2 secundarios | ✅ | 9: principal (seguro y correcto a la primera) y 2 secundarios (rapidez e idioma), con la regla para cuando chocan |
-| Arquitectura | Componentes, diagrama y flujo de datos | ✅ | 10 y 11: diagrama con 12 componentes y flujo numerado en 10 pasos |
-| Arquitectura | Qué es confidencial y cómo se protege | ✅ | 10 (código de color) y 12 (tabla de controles) |
-| Configuración del LLM | Licencia, implementación, temperatura y Top K justificados | ✅ | 13: las cuatro celdas de la plantilla rellenas y justificadas |
-| Configuración del LLM | Modelo, tokens, contexto, RAG o fine-tuning | ✅ | 14: modelo, contexto, salida, RAG frente a fine-tuning, búsqueda y coste |
-| Métricas | 3–5 métricas con valor ideal y propósito | ✅ | 16: cinco métricas ligadas a los beneficios y a los riesgos |
-
-## Extras para destacar
-
-| Extra | Estado | Diapositiva |
+| Criterio | Estado | Diapositiva |
 |---|---|---|
-| Arquitectura explicada para ingeniería, producto y legal | ✅ | 11: por qué este enfoque y qué mira cada audiencia |
+| **Describe el problema:** declaración simple del problema de negocio | ✅ | 4: recuadro "Problema de negocio" |
+| Cómo lo resuelve hoy el cliente y los mayores problemas de ese enfoque | ✅ | 4: tabla con 3 objetivos, el proceso actual y sus fallos |
+| **Describe la solución** en 1–3 oraciones claras y precisas | ✅ | 5: dos oraciones en el recuadro principal |
+| Qué lo hará más o menos atractivo o exitoso para el cliente | ✅ | 6: "Qué lo hará atractivo (o no)" |
+| Beneficio y características necesarias para proporcionarlo | ✅ | 5 ("¿Qué haría?") y 9 (beneficios) |
+| Por qué es mejor que la forma actual | ✅ | 6: "Mejor que hoy"; 5: "¿Por qué un LLM?" frente a las alternativas |
+| **Riesgos y mitigaciones:** 3–5, creativos, realistas y bajo nuestro control | ✅ | 7: los 3 del escenario y 2 propios (traducción de valores críticos, fuga entre clientes); incluye elegir un proveedor de LLM que cumpla la política de privacidad |
+
+## Detalles del sistema
+
+| Criterio | Estado | Diapositiva |
+|---|---|---|
+| **Atributos:** objetivo principal y 1–2 secundarios | ✅ | 9: principal (resolver de forma segura y correcta a la primera) y 2 secundarios (rapidez e idioma) |
+| **Arquitectura:** componentes y diagrama de sus relaciones | ✅ | 10: diagrama con 12 componentes y conexiones numeradas |
+| Componentes y conexiones seguros o confidenciales, y cómo | ✅ | 10 (código de color) y 12 (tabla de controles) |
+| **Configuración del LLM** ideal para los objetivos | ✅ | 13: licencia, implementación, temperatura y Top K; 14: modelo, contexto, salida, RAG, búsqueda y coste |
+
+## Mejores prácticas de la industria
+
+| Criterio | Estado | Diapositiva |
+|---|---|---|
+| **Métricas de éxito:** 3–5 ligadas a las necesidades del usuario | ✅ | 16: cinco métricas con valor ideal y propósito |
+
+## Sugerencias para destacar
+
+| Sugerencia | Estado | Diapositiva |
+|---|---|---|
+| Ilustración de la arquitectura para ingeniería, producto y legal | ✅ | 10 (diagrama) y 11 (qué mira cada audiencia) |
+| Por qué se eligió este enfoque | ✅ | 11: "Por qué este enfoque" |
+| Papel de cada componente y conexión | ✅ | 10: una línea de función en cada componente; 11: los 10 pasos numerados del flujo |
 | Prompt de sistema y prompt de usuario | ✅ | 18 |
-| Datos de referencia: tipo, cantidad, fuente y actualización | ✅ | 19 |
-| Sesgos: detección y corrección | ✅ | 20 |
+| Datos de referencia: tipo, cantidad y fuente | ✅ | 19 |
+| Cómo detectar y corregir sesgos | ✅ | 20 |
+| Frecuencia de actualización | ✅ | 19 |
 | Supuestos señalados | ✅ | 21, junto con los próximos pasos |
 
 ## Puntos mejorables
