@@ -1,49 +1,43 @@
 # Autoevaluación frente a la rúbrica
 
-Revisión de [definicion-de-producto.md](definicion-de-producto.md) criterio por criterio.
+Revisión de [asesor-experto-ia-escenario-c.pptx](../asesor-experto-ia-escenario-c.pptx) criterio por criterio.
 Leyenda: ✅ cumple · ⚠️ mejorable · ❌ no cumple.
+
+## Requisitos de la entrega
+
+| Requisito | Estado | Cómo se cumple |
+|---|---|---|
+| Usar uno de los tres escenarios oficiales | ✅ | Escenario C: Asesor Experto impulsado por IA para robots industriales. |
+| Entregar en la plantilla oficial de diapositivas | ✅ | Construido sobre el Starter Slide Deck, con su diseño. Se ha quitado la diapositiva de "Instrucciones" y se ha actualizado la portada, como pide la plantilla. |
 
 ## Criterios obligatorios
 
-| Sección | Criterio de la rúbrica | Estado | Dónde y cómo se cumple |
+| Sección | Criterio | Estado | Diapositiva |
 |---|---|---|---|
-| Problema | Declaración simple del problema de negocio | ✅ | §1.1: una frase con el usuario, el coste (20 min, 1 de cada 12 errores) y la causa (60 versiones + manual). |
-| Problema | Cómo lo resuelve hoy el cliente | ✅ | §1.1: los 5 pasos del proceso manual actual. |
-| Problema | Mayores fallos de ese enfoque | ✅ | §1.1: cuatro fallos, cada uno con su impacto cuantificado. |
-| Solución | Descripción en 1–3 oraciones | ✅ | §1.2: dos oraciones. |
-| Solución | Qué lo hace atractivo o exitoso | ✅ | §1.2: integrado en la herramienta, verificable mediante citas, el tramitador mantiene el control. |
-| Solución | Beneficio + funcionalidades necesarias | ✅ | §1.2: tabla que asocia cada beneficio a la funcionalidad que lo hace posible. |
-| Solución | Por qué es mejor que la solución actual | ✅ | §1.2: comparación con la búsqueda manual, con preguntar a un senior y con un chatbot genérico. |
-| Riesgos | 3–5 riesgos realistas y creativos | ✅ | §1.3: cinco riesgos. Ninguno es el genérico "la IA alucina": póliza equivocada, sesgo de automatización, inyección vía adjuntos… |
-| Riesgos | Centrados en lo que está bajo nuestro control | ✅ | Cada mitigación es una decisión de diseño, de proceso o de proveedor que tomamos nosotros. |
-| Riesgos | Mitigación para cada riesgo | ✅ | Columna de mitigación en la tabla. |
-| Atributos | Objetivo principal + 1–2 secundarios | ✅ | §2.1: precisión (principal); privacidad y latencia (secundarios), con umbrales y regla para resolver conflictos entre ellos. |
-| Arquitectura | Lista de componentes | ✅ | §2.2: 12 componentes con su papel. |
-| Arquitectura | Diagrama de relaciones | ✅ | §2.2: diagrama Mermaid más el flujo numerado de una petición. |
-| Arquitectura | Qué es seguro o confidencial y cómo | ✅ | §2.2: código de color en el diagrama y tabla de controles por componente y conexión. |
-| Configuración LLM | Elección del modelo justificada | ✅ | §2.3: comparación de tres modelos con precio, contexto y encaje; la elección se ata al atributo principal. |
-| Configuración LLM | Parámetros justificados por los objetivos | ✅ | §2.3: temperatura, razonamiento, esfuerzo, `max_tokens`, contexto, RAG frente a fine-tuning, formato de salida y caché, cada uno con su porqué. |
-| Métricas | 3–5 métricas medibles ligadas a necesidades del usuario | ✅ | §3.1: cinco métricas con la necesidad, el método de medida, la línea base y el objetivo. |
+| Cliente | Usuario objetivo y características demográficas y de comportamiento | ✅ | 3: técnicos de 20 a 60 años, 5 idiomas, 95 % en el móvil, contexto a pie de máquina |
+| Problema | Qué intenta hacer el usuario, cómo lo hace hoy y los mayores fallos | ✅ | 4: tres objetivos, cada uno con su proceso actual y sus fallos |
+| Solución | Descripción en 1–3 frases | ✅ | 5: dos frases en el recuadro principal |
+| Solución | Preguntas de la plantilla: qué haría, qué reemplaza, datos, privacidad, conectividad, por qué un LLM | ✅ | 5 y 6: una tarjeta por pregunta |
+| Riesgos | 3–5 riesgos con mitigación | ✅ | 7: los 3 del escenario y 2 propios, con mitigaciones bajo nuestro control |
+| Atributos | Beneficio principal y 1–2 secundarios | ✅ | 9: principal (seguro y correcto a la primera) y 2 secundarios (rapidez e idioma), con la regla para cuando chocan |
+| Arquitectura | Componentes, diagrama y flujo de datos | ✅ | 10 y 11: diagrama con 12 componentes y flujo numerado en 10 pasos |
+| Arquitectura | Qué es confidencial y cómo se protege | ✅ | 10 (código de color) y 12 (tabla de controles) |
+| Configuración del LLM | Licencia, implementación, temperatura y Top K justificados | ✅ | 13: las cuatro celdas de la plantilla rellenas y justificadas |
+| Configuración del LLM | Modelo, tokens, contexto, RAG o fine-tuning | ✅ | 14: modelo, contexto, salida, RAG frente a fine-tuning, búsqueda y coste |
+| Métricas | 3–5 métricas con valor ideal y propósito | ✅ | 16: cinco métricas ligadas a los beneficios y a los riesgos |
 
 ## Extras para destacar
 
-| Extra | Estado | Dónde y cómo se cumple |
+| Extra | Estado | Diapositiva |
 |---|---|---|
-| Ilustración de la arquitectura para ingeniería, producto y legal | ✅ | §2.2, "Cómo leer esta arquitectura según tu rol": por qué este enfoque y qué mira cada audiencia en el diagrama. |
-| System prompt y user prompt | ✅ | §4.1, más la respuesta esperada en JSON, que muestra el razonamiento sobre una exclusión. |
-| Datos de referencia: tipo, cantidad, fuentes, sesgos y actualización | ✅ | §4.2: cinco conjuntos de datos, cuatro sesgos con su detección y corrección, y una tabla de frecuencias. |
+| Arquitectura explicada para ingeniería, producto y legal | ✅ | 11: por qué este enfoque y qué mira cada audiencia |
+| Prompt de sistema y prompt de usuario | ✅ | 18 |
+| Datos de referencia: tipo, cantidad, fuente y actualización | ✅ | 19 |
+| Sesgos: detección y corrección | ✅ | 20 |
+| Supuestos señalados | ✅ | 21, junto con los próximos pasos |
 
 ## Puntos mejorables
 
-Ninguno impide aprobar, pero un revisor exigente podría señalarlos:
-
-- ⚠️ **Las dos oraciones de la solución son largas.** Cumplen el límite, pero se podrían partir en tres más cortas para leerse mejor.
-- ⚠️ **Las métricas 2 y 3 no tienen línea base** porque el producto es nuevo. Para que la comparación sea creíble, convendría medirlas en un piloto con 10–15 tramitadores antes del despliegue.
-- ⚠️ **La estimación de coste depende de que el 70 % de los análisis reutilice la caché.** Habría que validar ese porcentaje con la distribución real de siniestros por versión de póliza.
-- ⚠️ **El análisis regulatorio es preliminar.** El documento lo indica, pero una versión final debería incluir la validación de Legal.
-
-## Ejercicios para la formación
-
-1. Cambia el objetivo principal a **latencia** (por ejemplo, un chatbot para el cliente final). ¿Qué cambia en el modelo elegido, en los parámetros y en los riesgos?
-2. Propón un sexto riesgo y decide cuál de los cinco actuales sacrificarías para respetar el límite de la rúbrica.
-3. Redacta una métrica que parezca buena pero sea engañosa (por ejemplo, "número de análisis lanzados") y explica por qué no la usarías.
+- ⚠️ **Elección del modelo.** Se propone Claude Sonnet 4.6 porque permite fijar la temperatura y el Top K que pide la plantilla. Los modelos Claude más recientes ya no exponen esos parámetros. Un revisor podría preguntar por qué no se usa el más nuevo: la respuesta está en la diapositiva 14.
+- ⚠️ **Cifras supuestas.** Los 20 minutos de búsqueda, los 30.000 tickets y las 1.000 consultas diarias no vienen del escenario. Están señalados en la diapositiva 21, pero un piloto debería medirlos.
+- ⚠️ **Densidad de texto.** El deck está pensado para leerse sin presentador, así que algunas diapositivas tienen bastante texto. Para presentarlo en directo convendría resumirlo y llevar el detalle a las notas del orador.
